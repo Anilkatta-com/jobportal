@@ -1,0 +1,134 @@
+<main>
+<section style="background-color:   rgb(194, 191, 189);">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-lg-12 col-xl-11">
+          <div class="card text-black" style="border-radius: 0px;">
+            <div class="card-body p-md-1" >
+            <div class="card-body p-md-5" style="background-color: rgb(194, 191, 189);">
+              <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+  
+                  <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Job Post</p>
+  
+                  <form class="mx-1 mx-md-4">
+                
+                            <!-- Your left content goes here -->
+                            <!-- Place your form fields for job title, company name, qualification, etc., here -->
+                        
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <input type="text" id="job title" class="form-control" placeholder="Job Title " name="name" [(ngModel)] = "postjob.title"/>
+                        
+                        <label class="form-label" for="form3Example1c">Job Title</label>
+                      </div>
+                    </div>
+  
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <input type="email" id="company name" class="form-control" placeholder="Company Name" name="email" [(ngModel)] ="postjob.company"/>
+                        <label class="form-label" for="form3Example3c">Company Name</label>
+                      </div>
+                    </div>
+  
+                  
+                    
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <input type="text" id="qualification" class="form-control" placeholder="Enter Your Qualification" name="qualification" [(ngModel)] ="postjob.Qualification"/>
+                        <label class="form-label" for="form3Example4c">Qualification</label>
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="text" id="experience" class="form-control" placeholder="Enter Your Experience" name="experience" [(ngModel)] ="postjob.experience"/>
+                          <label class="form-label" for="form3Example4cd">Experience</label>
+                        </div>
+                      </div>
+                     
+
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <input type="text" id="location" class="form-control" placeholder="Enter Your Location" name="location" [(ngModel)] ="postjob.location"/>
+                        <label class="form-label" for="form3Example4cd">Location</label>
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="text" id="vacancy" class="form-control" placeholder="vacancys" name="city" [(ngModel)] ="postjob.vacancy"/>
+                          <label class="form-label" for="form3Example4cd">Vacancy</label>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="text" id="job description" class="form-control" placeholder="Description"  name="zip" [(ngModel)] ="postjob.jobdescription"/>
+                          <label class="form-label" for="form3Example4cd">Job Description</label>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="text" id="skills" class="form-control" placeholder="Enter Your Skills" name="Skills" [(ngModel)] ="postjob.Skills"/>
+                          <label class="form-label" for="form3Example4cd">Skills</label>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                        
+                          <input type="text" id="skills" class="form-control" placeholder="Enter Your Type" name="type" [(ngModel)] ="postjob.type"/>
+                          <label class="form-label" for="form3Example4cd">Type</label>
+                        </div>
+                      </div>
+                       <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="text" id="skills" class="form-control" placeholder="Enter URL" name="image" [(ngModel)] ="postjob.image"/>
+                          <label class="form-label" for="form3Example4cd">Image</label>
+                        </div> 
+                       </div>
+                      
+  
+                    <div class="form-check d-flex justify-content-center mb-5">
+                      <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
+                      <label class="form-check-label" for="form2Example3">
+                        I agree all statements in <a href="#!">Terms of service</a>
+                      </label>
+                    </div>
+                  
+  
+                    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                      <button type="button" class="btn btn-primary btn-lg" (click)="handleJobPost()" >PostJob</button>
+                    </div>
+  
+                </form>
+  
+                </div>
+                <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+  
+                   <img src="https://img.freepik.com/free-photo/profile-portrait-smiling-happy-businessman-with-laptop-black-suit_186202-3246.jpg?t=st=1711374322~exp=1711377922~hmac=c8c268184b25fc73fcb983bedfa642e52ff531782b738566099f98fbc614aca6&w=360"
+                    class="img-fluid" alt="Sample image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    </div>
+  </section>
+</main>
+  
+
