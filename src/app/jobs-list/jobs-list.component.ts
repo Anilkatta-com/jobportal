@@ -32,6 +32,7 @@ export class JobsListComponent implements OnInit {
       // this.userService.jobslist().subscribe((response:any)=>{
         // this.userService.deletejob(this.jobId).subscribe((response: any) => {
       alert("Deleted Successfully")
+      // Hello Anil How are you?
     
       console.log(response)
       // console.log("id:",id)
